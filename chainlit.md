@@ -1,1 +1,1 @@
-Hi there! Ask me anything about your health data from Apple Watch
+Hi there! Ask me a question about your health data from Apple Watch
