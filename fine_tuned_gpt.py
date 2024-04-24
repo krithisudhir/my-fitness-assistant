@@ -16,13 +16,13 @@ if not os.path.exists(PERSIST_DIR):
     # store it for later
     index.storage_context.persist(persist_dir=PERSIST_DIR)
 else:
-    # load the existing index
+    # load  existing index
     storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
     index = load_index_from_storage(storage_context)
 
-# Either way we can now query the index
+# query the index
 query_engine = index.as_query_engine()
-response = query_engine.query("What distinct activity types can you tell me about? Which one appears the most number of times?")
+response = query_engine.query("what is this file about?")
 print(response)
 
 
